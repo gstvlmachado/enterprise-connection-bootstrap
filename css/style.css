@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Paleta de cores */
+:root{
+    --green: #5CA344;
+    --blue: #4CA0E0;
+    --brown: #A35C33;
+    --yellow: #FAEB4C;
+    --white: #F2F2F2;
+    --bg-grey: #161616;
+    --bg-lightgrey: #262626;
+}
+
+body{
+    background-color: var(--bg-grey);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-bg-blue{
+    background-color: var(--blue);
+    transition: 0.4s;
+}
+
+.btn-bg-blue:hover {
+    background-color: var(--yellow);
+    color: var(--bg-grey);
+    transition: 0.4s;
+}
+
+img{width: 65%;}
+
+.dados{
+    width: 68%;
+    margin: 0 auto;
+}
+
+.under-blue{
+    text-decoration:underline var(--blue) 4px;
+    
+}
+
+.linkweb{
+    text-decoration: none;
+    color: var(--white);
+    border-bottom: 2px var(--yellow) solid;
+    transition: 0.4s;
+}
+
+.linkweb:hover {
+    color: var(--bg-grey);
+    background-color: var(--yellow);
+    transition: 0.4s;
+}
+
+.bg-green{background-color: var(--green);}
+.bg-blue {background-color: var(--blue);}
+.bg-brown{background-color: var(--brown);}
+.bg-yellow{background-color: var(--yellow);}
+.bg-lightgrey{background-color: var(--bg-lightgrey);-webkit-box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.7);}
+.bg-white{background-color: var(--white); color: #000;}
+.under-brown{text-decoration: underline var(--brown) 4px; padding-bottom: 0;}
+.f-title{font-family: 'Dancing Script', cursive; color: var(--white);}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Enterprise Connection - Desenvolvendo com Bootstrap</title>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-1 mx-5 f-title" href="#">Gulliver Traveller</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fs-5">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link"href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Hotéis</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active under-brown" aria-current="page" href="#">Restaurantes</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Cultura & Entretenimento</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <main class="container-fluid mt-5">
+        <div class="row p-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 bg-lightgrey">
+                <form>
+                    <fieldset class="p-5">
+                        <legend class="text-center mt-5 mb-5 fs-3 under-blue">Preencha os filtros:<span class="underline"></span></legend>
+                        
+                        <div class="mb-3">
+                            <label for="type" class="form-label">Tipo de culinária</label>
+                            <select id="type" class="form-select">
+                                <option>Selecione o tipo de comida</option>
+                                <option>Comida Brasileira</option>
+                                <option>Comida Francesa</option>
+                                <option>Comida Italiana</option>
+                                <option>Comida Portuguesa</option>
+                                <option>Comida Mexicana</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="hours" class="form-label">Horários de funcionamento</label>
+                            <select id="hours" class="form-select">
+                                <option>Selecione uma faixa de horário</option>
+                                <option>Horário comercial (08:00h às 18:00h)</option>
+                                <option>Disponível 24hrs</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="distance" class="form-label">Distância máxima:</label>
+                            <select id="distance" class="form-select">
+                                <option>Selecione uma distância máxima</option>
+                                <option>de 1Km até 5Km</option>
+                                <option>de 5Km até 10Km</option>
+                                <option>de 10Km até 15Km</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Faixa de preço (por pessoa):</label>
+                            <select id="price" class="form-select">
+                                <option>Selecione uma faixa de preços</option>
+                                <option>até R$50,00</option>
+                                <option>entre R$50,00 a R$100,00</option>
+                                <option>entre R$100,00 a R$200,00</option>
+                                <option>acima de R$200,00</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-4 btn-bg-blue">Buscar!</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 bg-lightgrey">
+
+                <div class="container-fluid text-center mt-5 mb-5">
+                    <h3 class="under-blue text-center">O que encontramos para você!</h3>
+                </div>
+
+                <div class="container-fluid dados mb-4">
+                    <p>Endereço: Av. Paulista, 1811, Bela Vista - São Paulo/SP</p>
+                    <p>Telefone: (11) 93372-0360</p>
+                    <p>Website: <a class="linkweb" target="_blank" href="https://www.mcdonalds.com.br/">www.mcdonalds.com.br</a></p>
+                    <p>Avaliação: 4.4/5.0</p>
+                </div>
+
+                <div class="row text-center mb-5">
+                    <div class="col-lg-12">
+                        <img src="./imagens/mequi1000.jpg" alt="Fachada restaurante" class="img-thumbnail">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+        
+    <footer class="container-fluid fixed-bottom bg-green">
+        <h6 class="text-center pt-1">Todos os direitos reservados © 2022-2024</h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
